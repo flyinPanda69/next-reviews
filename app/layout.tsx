@@ -1,5 +1,11 @@
+import type { ReactNode } from "react";
+
+interface layoutProps {
+  children: ReactNode;
+}
+
 // Root layout, like a template html document for all our pages
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: layoutProps) {
   return (
     <html lang="en">
       <body>
